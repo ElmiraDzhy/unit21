@@ -24,6 +24,7 @@ h1{
 }
 
 .wrapper{
+    position: relative;
     background-color: blue;
     width: 80%;
     height: 800px;
@@ -45,7 +46,8 @@ h1{
 }
 
 .two{
-
+    position: absolute;
+    right: 0;
 }
 
 .three{
@@ -55,50 +57,5 @@ h1{
 }
 
 .four{
-
 }
 
-/*                */
-.red{
-    background-color: red;
-
-}
-
-.yellow{
-    background-color: yellow;
-
-
-}
-
-.black{
-    background-color: rgb(75, 64, 64);
-
-}
-
-.pink{
-    background-color: pink;
-
-}
-
-.red, .yellow, .pink, .black{
-    border-radius: 50%;
-}
-
-.fixed{
-    position: fixed;
-}
-.top{
-    top: 0;
-}
-
-.bottom{
-    bottom: 0;
-}
-
-.left{
-    left: 0;
-}
-
-.right{
-    right: 0;
-}
