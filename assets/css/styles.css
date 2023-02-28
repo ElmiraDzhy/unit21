@@ -16,9 +16,42 @@ h1{
     text-transform: uppercase;
 }
 
-.element{
-    position: relative;
+.container{
+    background-color: rgb(218, 128, 10);
+    height: 800px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper{
+    background-color: blue;
+    width: 80%;
+    height: 800px;
+}
+
+.inner{
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: chartreuse;
     border: 1px solid black;
-    top: 20px;
-    left: 40px;
+}
+
+.one{
+    position: relative;
+    /* bottom: 20px; */
+    left: 100%;
+
+}
+
+.two{
+
+}
+
+.three{
+
+}
+
+.four{
+
 }
