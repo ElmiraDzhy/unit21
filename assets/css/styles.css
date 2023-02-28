@@ -16,49 +16,21 @@ h1{
     text-transform: uppercase;
 }
 
-.container{
-    background-color: rgb(218, 128, 10);
-    height: 1800px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.wrapper{
+.square{
     position: relative;
-    background-color: blue;
-    width: 80%;
-    height: 800px;
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(189, 142, 57);
 }
 
-.inner{
-    text-align: center;
-    width: 80px;
-    height: 80px;
-    background-color: chartreuse;
-    border: 1px solid black;
-}
-
-.one{
-    position: relative;
-    /* bottom: 20px; */
-    left: 100%;
-
-}
-
-.two{
+.square-child{
+    width: 50px;
+    height: 50px;
+    
     position: absolute;
-    right: 0;
+    top: 75px;
+    left: 75px;
+  
+    background-color: black;
 }
-
-.three{
-    position: fixed;
-    top: 20px;
-    right: 50px;
-}
-
-.four{
-    position: sticky;
-    width: 300px;
-    top: 10px;
-}
-
