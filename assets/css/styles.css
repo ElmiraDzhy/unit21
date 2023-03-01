@@ -13,7 +13,7 @@ body{
 }
 
 .nav-list{
-    background-color: #f72500;
+    background-color: #f73a19;
     font-size: 0px;
 
 }
@@ -27,8 +27,7 @@ body{
     display: inline-block;
     text-decoration: none;
     color: white;
-   padding: 10px;
-    
+    padding: 10px 20px;
 }
 
 
@@ -40,35 +39,43 @@ body{
 
 }
 
-.sub-nav-list{
+.sub-nav-list, .down-sub-nav-item, .down-sub-nav-item-2{
     display: none;
     padding: 0px;
 }
 
-.sub-list-item{
-    padding: 10px;
+.sub-list-item, .down-sub-list-item{
+    position: relative;
 }
 
-.sub-list-item a{
-text-decoration: none;
-color: white;
-padding: 10px;
-}
 
-.sub-list-item:hover{
-    background-color: #a02a16;
-
-}
-
-.list-item:hover {
+.sub-list-item:hover, 
+.list-item:hover, 
+.down-sub-list-item:hover{
     background-color: #a02a16;
 }
+
+
 
 .list-item:hover .sub-nav-list{
     display: block;
     position: absolute;
-  width: 100%;
-    background-color: #f72500;
+    width: 100%;
+    background-color: #f73a19;
+
 
 }
 
+
+
+.sub-list-item:hover>.down-sub-nav-item, 
+.down-sub-list-item:hover>.down-sub-nav-item-2{
+    display: block;
+    position: absolute;
+    background-color: #f73a19;
+
+    left:  100%;
+    top: 0px;
+    width: 100%;
+    
+}
