@@ -12,79 +12,40 @@ body{
     margin: 0px;
 }
 
-.wrapper{
-    position: relative;
-}
-
-section{
-    width: 250px;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.section{
-    position: relative;
-    background-color: rgb(148, 148, 209);
-    color: rgb(27, 40, 70);
-    z-index: 10;
-}
-
-.transit-sec{
-    position: absolute;
-    top: 0;
-    z-index: 1;
+.box{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
     background-color: blueviolet;
-    color: aliceblue;
+    border: 1px solid black;
 
-    
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-}
-
-.section:hover + .transit-sec{
-    margin-left: 260px;
-}
-
-.section:hover{
-    cursor: pointer;
-
-}
-
-
-ul{
-padding: 0;
-
-}
-
-li, .sub-link{
-    display: inline-block;
-    list-style-type: none;
-    padding: 10px;
-    background-color: rgb(190, 150, 98);
-    width: 100px;
-}
-
-.parent{
-    position: relative;
-    z-index: 100;
-}
-
-.sub-list{
-    position: absolute;
-    color: red;
-    top: -500%;
-    right: 0;
-   z-index: -100;
     transition: all 1s ease;
 }
 
-.parent:hover .sub-list{
-    top: 100%;
-  
+.box:hover{
+    transform: rotate(18deg);
+    cursor: pointer;
 }
 
-li:hover{
-    background-color: rgb(117, 77, 25);
-    cursor: pointer;
+.circle{
+    margin: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    border: 1px solid black;
+
+    transition: all 1s ease-in-out;
+
+}
+
+.circle:hover{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(165, 42, 42, 0.63);
+
+    transform: translate(230px, 50px);
 }
