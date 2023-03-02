@@ -12,71 +12,75 @@ body{
     margin: 0px;
 }
 
-.nav-list{
-    background-color: #f73a19;
-    font-size: 0px;
-
+p{
+    color: blueviolet;
 }
 
-.nav-list li{
-    list-style-type: none;
-    font-size: 16px;
+h1{
+    color: blue;
 }
 
-.link{
+
+
+ul{
     display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
 }
 
-
-.list-item{
+li{
     position: relative;
+    list-style: none;
     display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0px 7px;
+    background-color: antiquewhite;
+    width: 70px;
+    padding: 5px;
+
     
-   
+    transition-property: background-color, width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    
+}
+
+li:hover::after, li:hover::before{
+   width: 100%;
 
 }
 
-.sub-nav-list, .down-sub-nav-item, .down-sub-nav-item-2{
-    display: none;
-    padding: 0px;
-}
-
-.sub-list-item, .down-sub-list-item{
-    position: relative;
-}
-
-
-.sub-list-item:hover, 
-.list-item:hover, 
-.down-sub-list-item:hover{
-    background-color: #a02a16;
-}
-
-
-
-.list-item:hover .sub-nav-list{
+li::after, li::before{
+    content: "";
+    height: 5px;
+    width: 0%;
     display: block;
-    position: absolute;
-    width: 100%;
-    background-color: #f73a19;
-
-}
-
-
-
-.sub-list-item:hover>.down-sub-nav-item, 
-.down-sub-list-item:hover>.down-sub-nav-item-2{
-    display: block;
+    background-color: rgb(39, 43, 253);
     position: absolute;
 
-    background-color: #f73a19;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+  
 
+}
 
-    left:  100%;
+li::after{
+    left: 0px;
+}
+
+li::before{
+    right: 0px;
     top: 0px;
-    width: 100%;
-    
 }
+
+
+li:hover{
+    background-color: blueviolet;
+    color: antiquewhite;
+    width: 90px;
+    cursor: pointer;
+}
+
+
+
+
